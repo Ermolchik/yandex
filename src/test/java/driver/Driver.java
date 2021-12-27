@@ -11,6 +11,8 @@ public class Driver {
     public static String drvr = "chrome";
     public static WebDriver driver = null;
 
+    private Driver(){}
+
     public static WebDriver getDriver(String drvr) {
         switch (drvr){
             case "chrome":

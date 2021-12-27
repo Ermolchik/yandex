@@ -47,6 +47,6 @@ class AuthTest extends BaseTest {
         at.clickButtonOne();
         at.waitErrorMessage();
 
-        Assertions.assertEquals(at.errorMessage.getText(), "Неверный пароль");
+        Assertions.assertEquals("Неверный пароль",at.errorMessage.getText());
     }
 }
